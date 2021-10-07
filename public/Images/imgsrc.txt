@@ -1,0 +1,2 @@
+logo = https://www.flaticon.com/free-icon/job-seeker_1465458
+home-background = https://media4.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif?cid=ecf05e470igegnxciuv6sd5almg7bbpn3jh8mx7vpk5lsutm&rid=giphy.gif&ct=g
