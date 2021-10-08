@@ -20,7 +20,6 @@ body{
 /* HOMEPAGE */
 #home-page{
     background: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
-    /* background-size:cover; */
 }
 #homepage-background{
     width: 100vw;
@@ -37,6 +36,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .home-page-content h1{
     margin: 0;
     font-family: 'Bebas Neue', cursive;
@@ -56,6 +56,7 @@ nav{
     align-items: center;
     width: 100vw;
     padding: 0;
+    background-color: #151615;
 }
 .navigation-links{
     padding: 0;
@@ -65,7 +66,6 @@ nav{
 }
 .nav-item{
     color: white;
-    text-shadow: 2px 2px 8px #000000;
     margin: 1rem;
     text-decoration: none;
     transition: 0.1s ease-out;
@@ -80,8 +80,32 @@ nav{
     align-items: center;
     font-size: 1.1rem;
 }
-
-@media (max-width: 800px){
+/* Login page */
+.login-page-content{ 
+    height: 100vh;
+    color: #1d1f1e;
+    background-color: #bbbbbbca;
+    margin: 0;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-page-content h3{
+    color: white;
+}
+.login-div{
+    background-color: white;
+    box-shadow: 1px 1px 15px #706f6f38;
+    border-radius: 1em;
+    width: calc(100%/2);
+    height: calc(100%/2);
+}
+.login-form-div{
+    margin: 2rem;
+}
+/* @media (max-width: 800px){
     nav{
         display: flex;
         flex-direction: column;
@@ -98,4 +122,4 @@ nav{
         flex-direction: row;
         justify-content: center;
     }
-}
+} */
