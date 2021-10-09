@@ -2,9 +2,9 @@ import React from "react";
 
 function Label(props) {
     return (
-        <div >
-            <label htmlFor={props.for}>{props.text}</label>
-            <input type={props.type}id={props.id} name={props.name}/>
+        <div className="login-row">
+            <label htmlFor={props.htmlFor} >{props.label}</label>
+            <input className = {props.class} type={props.type} id={props.id} />
         </div>
     );
 }

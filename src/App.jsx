@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Login from './Pages/login';
 import Signup from './Pages/Signup';
 import Navbar from './Components/Navbar';
+import UploadCV from './Pages/UploadCV';
 import {
     BrowserRouter as Router,
     Switch,
@@ -21,6 +22,9 @@ function App() {
                 </Route>
                 <Route exact path="/Signup">
                     <Signup />
+                </Route>
+                <Route exact path="/UploadCV">
+                    <UploadCV />
                 </Route>
                 <Route path="/">
                     <Home />

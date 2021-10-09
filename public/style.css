@@ -55,11 +55,12 @@ nav{
     align-items: center;
     width: 100vw;
     padding: 0;
-    background-color: #151615;
+    background-color: #1d1f1d;
 }
+
 .navigation-links{
     padding: 0;
-    margin: 10px 0;
+    margin: 0 0;
     display: flex;
     list-style: none;
 }
@@ -98,13 +99,15 @@ nav{
     color: black;
     margin-bottom: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .login-div{
     background-color: white;
+    margin-top: 50px;
     box-shadow: 1px 1px 15px #706f6f38;
     border-radius: 1em;
     width: calc(100%/2);
-    /* width: fit-content; */
     height: calc(100%/2);
     height: fit-content;
 }
@@ -117,7 +120,7 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-input{
+.input-text{
     height: 35px;
     font-size: 1em;
     text-align:  center;
@@ -128,18 +131,45 @@ input{
     /* align-items: center; */
 }
 button{
-    width: 80px;
+    width: fit-content;
+    padding: 0 2em; 
     height: 40px;
     color: white;
     border: solid;
+    font-size: 0.8em;
     background-color: #000000;
     border-radius: 1em;
     transition: 0.1s ease-out;
 }
 button:hover{
     transform: scale(1.1);
+    cursor: pointer;
     background-color: #5c5a5a;
 }
+
+/* Sign up page */
+.Signup-process{
+    box-shadow: 1px 1px 15px #706f6f38;
+    padding: 1em;
+    height: 8px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 0.9em;
+    color: #000000;
+    background-color: #ffffff;
+    position: fixed;
+    top: 80px;
+}
+
+/* CV page */
+.CV, .upload-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* @media (max-width: 800px){
     nav{
         display: flex;
