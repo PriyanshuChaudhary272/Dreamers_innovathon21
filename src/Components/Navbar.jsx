@@ -13,7 +13,7 @@ import Logo from './logo';
                 <li><Link className="nav-item" to="5">More</Link></li>
             </ul>
             <ul className= {props.className}>
-                <li><Link className="nav-item" to="6">Sign up</Link></li>
+                <li><Link className="nav-item" to="/Signup">Sign up</Link></li>
                 <li><Link className="nav-item" to="/Login">Log in</Link></li>
             </ul>
         </nav>

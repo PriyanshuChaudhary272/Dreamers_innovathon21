@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Label from "../Components/formlabelinput";
+import React from "react";
+// import Label from "../Components/formlabelinput";
 function Login() {
     function prevent(e) {
         e.preventDefault();
@@ -20,7 +20,7 @@ function Login() {
                             <input type="Password" id="Password" />
                         </div>
                         <div className="login-row">
-                            <button >Login</button>
+                            <button onClick = {prevent} >Login</button>
                         </div>
                     </form>
                 </div>

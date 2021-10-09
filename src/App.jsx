@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Pages/Home'
 import Login from './Pages/login';
+import Signup from './Pages/Signup';
 import Navbar from './Components/Navbar';
 import {
     BrowserRouter as Router,
@@ -15,8 +16,11 @@ function App() {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/Login">
+                <Route exact path="/Login">
                     <Login />
+                </Route>
+                <Route exact path="/Signup">
+                    <Signup />
                 </Route>
                 <Route path="/">
                     <Home />
