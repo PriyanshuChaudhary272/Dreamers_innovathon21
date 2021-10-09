@@ -6,12 +6,11 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 function App() {
     return (
         <Router>
-            <Navbar class = "navigation-links" />
+            <Navbar className = "navigation-links" />
             <Switch>
                 <Route exact path="/">
                     <Home />
