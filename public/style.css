@@ -321,6 +321,73 @@ nav.active{
     flex-direction: row;
     align-items: center;
 }
+
+
+
+
+
+/* RECRUIT DIV */
+.recruit{
+    background-color: #b1b1b1;
+    padding: 120px;
+    color: white;
+    /* height: 100vh; */
+}
+.recruit-Div{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.recruit-icon-name{
+    display: flex;
+}
+.recruit-icon-name-button{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.recruit-icon-name h4, h5{
+    margin: 0;
+}
+.company-name p{
+    margin: 0;
+    font-size: 0.7rem;
+}
+.company-name{
+    padding-left: 20px;
+    color: black;
+}
+.recruit-button{
+    border: none;
+    border-radius: 1em;
+    background-color: #c57b26;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
+}
+.button-requirement{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.recruit-apply-button{
+    border: solid 2px #3570dd;
+    border-radius: 1em;
+    background-color: #ffffff;
+    color: #3570dd;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em 2em;
+    font-size: 1rem;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.recruit-apply-button:hover{
+    background-color: #e0e0e0;
+}
+
 /* @media (max-width: 800px){
     nav{
         display: flex;
