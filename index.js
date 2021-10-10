@@ -1,8 +1,10 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const dotnev = require('dotenv');
 const helmet = require('helmet');
 const morgon = require('morgan');
+
+const db= require('./config/mongoose');
+
 
 const app = express();
 const port =8000;
@@ -10,9 +12,7 @@ const port =8000;
 
 dotnev.config();
 
-mongoose.connect(process.env.MONGO_URL,{useNewUrlParser: true, useUnifiedTopology: true},()=>{
-    console.log("Connected to MongoDB")
-});
+
 //middleware
 app.use(express.json());
 app.use(helmet());
