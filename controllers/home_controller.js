@@ -1,3 +1,3 @@
 module.exports.home = function(req,res){
-    return res.end('<h1>Express is up for Startup Platform</h1>');
-};
+    return res.send("<h1>welcome to homepage</h1>");
+};  
