@@ -24,6 +24,7 @@ body{
 /* HOMEPAGE */
 #home-page{
     background: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+    box-shadow: 1px 1px 15px #706f6f86;
 }
 #homepage-background{
     width: 100vw;
@@ -63,12 +64,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    box-shadow: 1px 1px 15px #00000038;
     padding: 0;
-    background-color: #1d1f1da2;
+    transition: 0.3s ease-in-out;
+    /* background-color: #1d1f1d00; */
 }
-
-.navigation-links, .login-nav{
+nav.active{
+    box-shadow: 1px 1px 15px #00000038;
+    background-color: #1e201eed;
+}
+.navigation-links{
     padding: 0;
     margin: 10px 0;
     display: flex;
@@ -99,7 +103,7 @@ nav{
 .login-page-content{ 
     height: 100vh;
     color: #1d1f1e;
-    background-color: #e6e6e6ca;
+    background-color: #b3a78c9a;
     margin: 0;
     /* text-align: center; */
     display: flex;
@@ -199,6 +203,7 @@ nav{
 #profile-page{
     background: no-repeat url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1674&q=80");
     padding: 150px;
+    box-shadow: 1px 1px 15px #706f6f9a;
     color: white;
 }
 .profile-page-hero{
@@ -260,10 +265,14 @@ nav{
 .profile-introduction-img img{
     width: 300px;
     border-radius:100%;
+    line-height: 100px;
 }
 
 .profile-page-about{
     margin-top: 100px;
+}
+.profile-page-about p{
+    color: #b7c9ca;
 }
 
 .highlights-div{
@@ -277,6 +286,35 @@ nav{
     border-radius: 1em;
     padding: 30px;
     margin-top: 60px;
+}
+.highlights-div-content p{
+    color: #727272;
+}
+
+
+
+/* FOOTER */
+#footer{
+    display: flex;
+    padding: 70px ;
+}
+.footer-logo{
+    margin: auto 0;
+    /* margin-left: 250px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo p{
+    font-size: 0.7rem;
+    color: #909090;
+}
+.footer-links{
+    color: #818181;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /* @media (max-width: 800px){
     nav{

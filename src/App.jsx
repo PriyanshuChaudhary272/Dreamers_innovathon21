@@ -5,6 +5,7 @@ import Signup from './Pages/Signup';
 import Navbar from './Components/Navbar';
 import UploadCV from './Pages/UploadCV';
 import Profile from './Pages/Profile';
+import Footer from './Components/Footer';
 import {
     BrowserRouter as Router,
     Switch,
@@ -17,9 +18,12 @@ function App() {
     function handleLogin(){
         setLogin(true);
     }
+    function handlelogin(){
+        setLogin(!login);
+    }
     return (
         <Router>
-            <Navbar className = {login?"login-nav":"navigation-links"} />
+            <Navbar login = {login?"true":"false"} />
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -40,6 +44,7 @@ function App() {
                     <Home />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     )
 }
