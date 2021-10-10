@@ -27,7 +27,20 @@ const userSchema = new mongoose.Schema({
     {
         type:Boolean,
         default:false
+    },
+    desc:
+    {
+        type:String,
+        max:100
+
+    },
+    city:
+    {
+        type:String,
+        max:50
+
     }
+    
 },{timestamps:true });
 
 const User= mongoose.model('User',userSchema);
