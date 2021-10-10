@@ -18,7 +18,7 @@ function Signup() {
                         <Label class = "input-text" htmlFor="email" label = "Email" type="email" id="email" />
                         <Label class = "input-text" htmlFor="Password" label ="Password" type="Password" id="Password" />
                         <div className="login-row">
-                            <button >Sign up</button>
+                            <button className = "button-login">Sign up</button>
                         </div>
                     </form>
                 </div>

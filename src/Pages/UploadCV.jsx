@@ -15,7 +15,7 @@ function UploadCV() {
                     <form action="/Profile">
                         <Label className="upload-file" class="input-file" htmlFor="file" type="file" id="file" />
                         <div className="login-row">
-                            <button>Upload Resume</button>
+                            <button className = "button-login">Upload Resume</button>
                         </div>
                     </form>
                 </div>

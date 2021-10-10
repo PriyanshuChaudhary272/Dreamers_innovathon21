@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 /* font-family: 'Bebas Neue', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+/* font-family: 'Mali', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@700&display=swap');
 body{
     padding: 0;
     margin: 0;
@@ -16,6 +17,10 @@ body{
     padding: 0;
     margin: 0;
 }
+
+
+
+
 /* HOMEPAGE */
 #home-page{
     background: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
@@ -47,6 +52,10 @@ body{
     text-shadow: 2px 2px 8px #000000;
 }
 
+
+
+
+
 /* NAVBAR */
 nav{
     position: fixed;
@@ -54,13 +63,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+    box-shadow: 1px 1px 15px #00000038;
     padding: 0;
-    background-color: #1d1f1d;
+    background-color: #1d1f1da2;
 }
 
-.navigation-links{
+.navigation-links, .login-nav{
     padding: 0;
-    margin: 0 0;
+    margin: 10px 0;
     display: flex;
     list-style: none;
 }
@@ -78,8 +88,10 @@ nav{
     font-family: 'Lemon', cursive; 
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
+
+
 
 
 
@@ -87,7 +99,7 @@ nav{
 .login-page-content{ 
     height: 100vh;
     color: #1d1f1e;
-    background-color: #bbbbbbca;
+    background-color: #e6e6e6ca;
     margin: 0;
     /* text-align: center; */
     display: flex;
@@ -130,7 +142,7 @@ nav{
     border-radius: 1em;
     /* align-items: center; */
 }
-button{
+.button-login{
     width: fit-content;
     padding: 0 2em; 
     height: 40px;
@@ -141,11 +153,16 @@ button{
     border-radius: 1em;
     transition: 0.1s ease-out;
 }
-button:hover{
+.button-login:hover{
     transform: scale(1.1);
     cursor: pointer;
     background-color: #5c5a5a;
 }
+
+
+
+
+
 
 /* Sign up page */
 .Signup-process{
@@ -160,8 +177,12 @@ button:hover{
     color: #000000;
     background-color: #ffffff;
     position: fixed;
-    top: 80px;
+    top: 100px;
 }
+
+
+
+
 
 /* CV page */
 .CV, .upload-file{
@@ -170,6 +191,93 @@ button:hover{
     align-items: center;
 }
 
+
+
+
+
+/* Profile page */
+#profile-page{
+    background: no-repeat url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1674&q=80");
+    padding: 150px;
+    color: white;
+}
+.profile-page-hero{
+    display: flex;
+}
+.profile-page-introduction-left{ 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-introduction{
+    background-color: #ffffff13;
+    height: fit-content;
+    width: 70%;
+    padding: 2em;
+    margin-bottom: 40px;
+    border-radius: 1em;
+}
+.profile-page-introduction-left h1{
+    margin: 0;
+    font-family: 'Mali', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-size: 2rem;
+}
+.workStatus{
+    display: flex;
+    justify-content: center;
+}
+.profile-buttons{
+    width: fit-content;
+    font-family: 'Mali', cursive;
+    padding: 0 1em; 
+    margin: 0 15px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 0.8em;
+    background-color: #ffffff32;
+    border-radius: 1em;
+    transition: 0.1s ease-out;
+}
+.profile-buttons:hover{
+    cursor: pointer;
+    background-color: #ffffff59;
+}
+
+
+.profile-page-introduction-left p{
+    /* margin: 170px 0; */
+    color: #b7c9ca;
+    text-shadow: 2px 2px 8px #000000;
+}
+.profile-introduction-img{
+    display: flex;
+    justify-content: center;
+}
+.profile-introduction-img img{
+    width: 300px;
+    border-radius:100%;
+}
+
+.profile-page-about{
+    margin-top: 100px;
+}
+
+.highlights-div{
+    display: flex;
+    justify-content: center;
+}
+.highlights-div-content{
+    width: 70%;
+    height: fit-content;
+    box-shadow: 1px 1px 15px #706f6f75;
+    border-radius: 1em;
+    padding: 30px;
+    margin-top: 60px;
+}
 /* @media (max-width: 800px){
     nav{
         display: flex;

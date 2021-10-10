@@ -4,15 +4,22 @@ import Login from './Pages/login';
 import Signup from './Pages/Signup';
 import Navbar from './Components/Navbar';
 import UploadCV from './Pages/UploadCV';
+import Profile from './Pages/Profile';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
+import { useState } from 'react/cjs/react.development';
+
 function App() {
+    const [login, setLogin] = useState(false);
+    function handleLogin(){
+        setLogin(true);
+    }
     return (
         <Router>
-            <Navbar className = "navigation-links" />
+            <Navbar className = {login?"login-nav":"navigation-links"} />
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -25,6 +32,9 @@ function App() {
                 </Route>
                 <Route exact path="/UploadCV">
                     <UploadCV />
+                </Route>
+                <Route exact path="/Profile">
+                    <Profile />
                 </Route>
                 <Route path="/">
                     <Home />
