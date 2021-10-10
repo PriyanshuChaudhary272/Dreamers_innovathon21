@@ -13,6 +13,7 @@ router.put('/:id',postController.update);
 //delete a post
 router.delete('/:id',postController.delete);
 //like a post
+router.put('/:id/apply',postController.apply)
 //get all posts (timeline)
 
 
