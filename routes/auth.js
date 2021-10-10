@@ -18,6 +18,7 @@ const User = require("../models/Users");
   
 // });
 router.post('/register',authController.auth);
+router.post('/login',authController.login);
 
 // router.get('/register',function ()
 // {
