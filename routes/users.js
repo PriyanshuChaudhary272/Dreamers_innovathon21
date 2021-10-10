@@ -6,6 +6,7 @@ const userController = require('../controllers/users_controller');
 
 router.get('/profile',userController.profile);
 router.use('/auth',require('./auth'));
+router.use('/posts',require('./posts'));
 
 //update user
 router.put('/:id',userController.update);
