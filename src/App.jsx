@@ -7,6 +7,7 @@ import UploadCV from './Pages/UploadCV';
 import Profile from './Pages/Profile';
 import Footer from './Components/Footer';
 import Recruit from './Pages/Recruit';
+import UserList from './Pages/Userlist';
 import {
     BrowserRouter as Router,
     Switch,
@@ -43,6 +44,9 @@ function App() {
                 </Route>
                 <Route exact path="/Recruit">
                     <Recruit />
+                </Route>
+                <Route exact path="/Startup">
+                    <UserList />
                 </Route>
                 <Route path="/">
                     <Home />

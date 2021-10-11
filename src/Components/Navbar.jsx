@@ -19,8 +19,8 @@ function Navbar(props) {
             <nav className={navbar ? "container_ active" : "container_"}>
                 <Logo src="https://cdn-icons-png.flaticon.com/512/992/992615.png" lsize="2.7rem" show="true" />
                 <ul className="navigation-links">
-                    <li><Link className="nav-item" to="/">Start up</Link></li>
-                    <li><Link className="nav-item" to="/Recruit">Recruit</Link></li>
+                    <li><Link className="nav-item" to="/Recruit">Start up</Link></li>
+                    <li><Link className="nav-item" to="/Startup">Recruit</Link></li>
                     <li><Link className="nav-item" to="4">Blog</Link></li>
                     <li><Link className="nav-item" to="5">More</Link></li>
                 </ul>
