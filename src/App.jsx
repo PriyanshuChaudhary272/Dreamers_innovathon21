@@ -7,24 +7,18 @@ import UploadCV from './Pages/UploadCV';
 import Profile from './Pages/Profile';
 import Footer from './Components/Footer';
 import Recruit from './Pages/Recruit';
+import Credential from './Pages/Credentials';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
-import { useState } from 'react/cjs/react.development';
+// import { useState } from 'react/cjs/react.development';
 
 function App() {
-    const [login, setLogin] = useState(false);
-    function handleLogin(){
-        setLogin(true);
-    }
-    function handlelogin(){
-        setLogin(!login);
-    }
     return (
         <Router>
-            <Navbar login = {login?"true":"false"} />
+            <Navbar />
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -43,6 +37,9 @@ function App() {
                 </Route>
                 <Route exact path="/Recruit">
                     <Recruit />
+                </Route>
+                <Route exact path="/Credential">
+                    <Credential />
                 </Route>
                 <Route path="/">
                     <Home />

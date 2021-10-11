@@ -94,7 +94,9 @@ nav.active{
     align-items: center;
     font-size: 1.15rem;
 }
-
+.login-icon{
+    padding-left: 100px;
+}
 
 
 
@@ -105,7 +107,6 @@ nav.active{
     color: #1d1f1e;
     background-color: #b3a78c9a;
     margin: 0;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,11 +168,22 @@ nav.active{
     cursor: pointer;
     background-color: #5c5a5a;
 }
-
-
-
-
-
+/* CREDENTIAL FORM */
+.Credential-page-content{
+    height: fit-content;
+    padding: 100px 0;
+}
+.Credential-row{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.Credential-row label{
+    margin: 10px;
+}
+textarea{
+    resize: none;
+}
 
 /* Sign up page */
 .Signup-process{
@@ -238,6 +250,7 @@ nav.active{
 .workStatus{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .profile-buttons{
     width: fit-content;

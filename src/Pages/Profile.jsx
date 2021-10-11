@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react/cjs/react.development';
-import Logo from '../Components/logo';
+// import Logo from '../Components/logo';
 import Profileimg from '../Components/Profileimage';
-import Icons from '../Components/icons';
+// import Icons from '../Components/icons';
 import Highlights from '../Components/ProfileHighlights';
 function Home() {
     const [work, setWork] = useState(true);
@@ -19,9 +19,11 @@ function Home() {
                             <p>Front-end Developer | Video and Audio Editor | Youtube (Lakeer) | Student at Delhi Technological University ( DTU - Formerly DCE )</p>
                         </div>
                         <div className="workStatus">
-                            <div>
+                            <div className="workStatus">
                                 <span>Work Status</span>
-                                <button className="profile-buttons">{work ? "Open to work" : "Close to work"}</button>
+                                <form action="/Contact">
+                                    <button className="profile-buttons">{work ? "Open to work" : "Close"}</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -47,11 +49,11 @@ function Home() {
                         Eligendi ea quam laboriosam earum praesentium quidem sed libero debitis blanditiis, iusto quasi, dolores vitae tempore facilis asperiores explicabo aperiam cumque minus sit eius sapiente vero error! Officiis, consequatur similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illuexcepturi quod sed omnis, ducimus adipisci officiis, esse a ab delectus suscipit saepe eius sint ipsa tenetur modi nemo minima eum.</p>
                 </div>
             </div>
-            <Highlights heading ="Education" para =" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
+            <Highlights heading="Education" para=" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
                         El"/>
-            <Highlights heading ="Skills" para =" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
+            <Highlights heading="Skills" para=" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
                         El"/>
-            <Highlights heading ="Interests" para =" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
+            <Highlights heading="Interests" para=" Aliquam optio reprehenderit nostrum asperiores deserunt iure dicta alias repudiandae, nulla porro? Sunt minus quod nihil ipsam id eligendi, suscipit, dolores tempora modi incidunt quas? Harum ratione cum a maxime!
                         El"/>
         </>
     )

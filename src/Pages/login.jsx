@@ -11,10 +11,10 @@ function Login() {
                 <div className="login-form-div">
                     <h2>Sign in to your account</h2>
                     <form action="/Profile">
-                        <Label class = "input-text" htmlFor="email" label = "Email" type="email" id="email" />
-                        <Label class = "input-text" htmlFor="Password" label ="Password" type="Password" id="Password" />
+                        <Label htmlFor="email" label = "Email" type="email" id="email" />
+                        <Label htmlFor="Password" label ="Password" type="Password" id="Password" />
                         <div className="login-row">
-                            <button className= "button-login" >Login</button>
+                            <button type = "submit" className= "button-login" >Login</button>
                         </div>
                     </form>
                 </div>

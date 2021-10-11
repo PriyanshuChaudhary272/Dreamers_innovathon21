@@ -8,7 +8,7 @@ function Signup() {
     return (
         <div className="login-page-content">
             <div className ="Signup-process">
-                <p><span style = {{color: "green"}}>Sign up</span>  -  <span>Upload CV</span>  -  <span>Done</span></p>
+                <p><span>Profile</span>  -  <span style = {{color: "green"}}>Sign up</span>  -  <span>Upload CV</span>  -  <span>Done</span></p>
             </div>
             <div className="login-div">
                 <div className="login-form-div">
@@ -18,8 +18,8 @@ function Signup() {
                         <Label class = "input-text" htmlFor="email" label = "Email" type="email" id="email" />
                         <Label class = "input-text" htmlFor="Password" label ="Password" type="Password" id="Password" />
                         <div className="login-button-row">
-                            <button className = "button-login">Sign up</button>
-                            <button style={{backgroundColor:"Salmon"}}className = "button-login">Google</button>
+                            <button type = "submit" className = "button-login">Sign up</button>
+                            <button type = "submit" style={{backgroundColor:"Salmon"}}className = "button-login">Google</button>
                         </div>
                     </form>
                 </div>
