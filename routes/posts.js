@@ -14,7 +14,10 @@ router.put('/:id',postController.update);
 router.delete('/:id',postController.delete);
 //like a post
 router.put('/:id/apply',postController.apply)
+//get a post
+router.get('/:id',postController.get);
 //get all posts (timeline)
+router.get('/timeline/all',postController.timeline);
 
 
 module.exports = router;
