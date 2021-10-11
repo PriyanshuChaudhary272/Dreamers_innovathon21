@@ -12,7 +12,7 @@ function Recruit(){
             {posts.map(p=>(
             <RecuitDiv 
             key={p.id} post={p}
-            iconsrc = "https://cdn-icons.flaticon.com/png/512/2978/premium/2978607.png?token=exp=1633897793~hmac=ff447fa0f0897df1d04577a6b33d4474"
+            iconsrc = "https://cdn-icons.flaticon.com/png/512/3932/premium/3932506.png?token=exp=1633943083~hmac=aa399c25bf6959d8eb9524961e25719c"
             name = {JSON.parse(JSON.stringify(p.name))}
             description = {JSON.parse(JSON.stringify(p.description))}
             active = {JSON.parse(JSON.stringify(p.active))}
