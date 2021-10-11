@@ -391,6 +391,7 @@ textarea{
 }
 .recruit-icon-name{
     display: flex;
+    margin-left: 10px;
 }
 .recruit-icon-name-button{
     display: flex;
@@ -431,7 +432,7 @@ textarea{
     width: fit-content;
     padding: 1em 2em;
     font-size: 1rem;
-    margin-left: 100px;
+    margin-left: 6em;
     cursor: pointer;
 }
 .recruit-apply-button:hover{
@@ -446,11 +447,33 @@ textarea{
         height: 50%;
         background-color: #1e201eed;
     }
-    .navigation-links{
+    .navigation-links, .recruit-icon-name{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .recruit-Div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 90%;
+    }
+    .recruit{
+        padding: 120px 0;
+    }
+    .media-company-name{
+        padding: 0;
+        margin: 0;
+    }
+    .button-requirement{
+        display: flex;
+        flex-direction: column;
+    }
+.recruit-apply-button ,.company-name, .recruit-icon-name{
+    margin: 10px ;
+}
+
     #home-page{
         display: flex;
         flex-direction: row;

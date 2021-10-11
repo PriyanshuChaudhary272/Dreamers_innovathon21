@@ -21,7 +21,7 @@ function Navbar(props) {
                     <li><Link className="nav-item" to="/Recruit">Start up</Link></li>
                     <li><Link className="nav-item" to="/Startup">Recruit</Link></li>
                     <li><Link className="nav-item" to="4">Blog</Link></li>
-                    <li style = {window.location.port.toString() !== "localhost:3000"?{visibility:"hidden"&&console.log(window.location.hostname.toString())}:{ visibility:"visible"}}><Link className="nav-item" to="/#More">More</Link></li>
+                    <li><a className="nav-item" href="/#More">More</a></li>
                 </ul>
                 {login ?
                     <ul className="navigation-links login-icon">
