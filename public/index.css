@@ -1,12 +1,18 @@
 /* fonts */
 /* font-family: 'Montserrat', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Lemon', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 /* font-family: 'Bebas Neue', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* font-family: 'Mali', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@700&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -51,10 +57,38 @@ body{
 .home-page-content h3{
     margin: 170px 0;
     text-shadow: 2px 2px 8px #000000;
+    font-weight: 400;
 }
-
-
-
+.More-div{
+    text-align: center;
+    padding-top: 150px;
+}
+.team{
+    width: 70%;
+    margin: 150px auto;
+}
+.team h1{
+    font-weight: 200;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 80px 20px;
+}
+.team-member h4, p{
+    margin: 5px;
+}
+.team-member p{
+    font-size: 0.7rem;
+}
+.Team-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 
 /* NAVBAR */
@@ -67,6 +101,9 @@ nav{
     padding: 0;
     transition: 0.3s ease-in-out;
     /* background-color: #1d1f1d00; */
+}
+nav .nav-item{
+    text-shadow: 2px 2px 8px #0000003d;
 }
 nav.active{
     box-shadow: 1px 1px 15px #00000038;
@@ -401,12 +438,13 @@ textarea{
     background-color: #e0e0e0;
 }
 
-/* @media (max-width: 800px){
+@media (max-width: 800px){
     nav{
         display: flex;
         flex-direction: column;
         position: unset;
         height: 50%;
+        background-color: #1e201eed;
     }
     .navigation-links{
         display: flex;
@@ -418,4 +456,7 @@ textarea{
         flex-direction: row;
         justify-content: center;
     }
-} */
+    .Signup-process{
+        display: none;
+    }
+}
