@@ -5,7 +5,6 @@ export const Users = [
       username: "Safak Kocaoglu",
       description:"My name is KHan",
       recruirement:"Android Developer",
-    
       active: "true"
     },
     {

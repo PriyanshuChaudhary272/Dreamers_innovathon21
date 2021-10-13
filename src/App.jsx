@@ -24,25 +24,25 @@ function App() {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route exact path="/Login">
+                <Route exact path="/login">
                     <Login />
                 </Route>
-                <Route exact path="/Signup">
+                <Route exact path="/register">
                     <Signup />
                 </Route>
-                <Route exact path="/UploadCV">
+                <Route exact path="/uploadCV">
                     <UploadCV />
                 </Route>
-                <Route exact path="/Profile">
+                <Route exact path="/profile/:username">
                     <Profile />
                 </Route>
-                <Route exact path="/Recruit">
+                <Route exact path="/recruit">
                     <Recruit />
                 </Route>
-                <Route exact path="/Startup">
+                <Route exact path="/startup">
                     <UserList />
                 </Route>
-                <Route exact path="/Credential">
+                <Route exact path="/credential">
                     <Credential />
                 </Route>
                 <Route path="/">
