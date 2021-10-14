@@ -99,3 +99,18 @@ module.exports.unfollow = async function (req, res) {
 
 };
 
+
+//get all users
+
+module.exports.all = async function (req, res) {
+    try {
+        const users = await User.find();
+        return res.json(users);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+
+};
+
+
+
