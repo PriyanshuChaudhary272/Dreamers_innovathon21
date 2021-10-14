@@ -8,6 +8,9 @@ router.get('/profile',userController.profile);
 router.use('/auth',require('./auth'));
 router.use('/posts',require('./posts'));
 
+
+//get all users
+router.get('/all',userController.all);
 //update user
 router.put('/:id',userController.update);
 //delete user
