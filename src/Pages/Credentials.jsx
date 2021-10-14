@@ -1,17 +1,18 @@
 import React from "react";
-// import Label from "../Components/formlabelinput";
+import Label from "../Components/formlabelinput";
 import Credentialform from "../Components/Credentialform";
+import Logo from "../Components/logo";
 // import Icons from "../Components/icons";
 function Credential() {
     return (
         <div className="login-page-content Credential-page-content">
             <div className="Signup-process">
-                <p><span style={{ color: "green" }}>Profile</span>  -  <span>Sign up</span> - <span>Upload CV</span>  -  <span>Done</span></p>
+                <p><span>Sign up</span> - <span style={{ color: "green" }}>Profile</span>  -  <span>Upload CV</span>  -  <span>Done</span></p>
             </div>
             <div className="login-div Credential-div">
                 <div className="login-form-div">
                     <h2>Create your Profile</h2>
-                    <form action="/Signup">
+                    <form action="/UploadCV">
                         <Credentialform
                             htmlFor="Recidance"
                             label="Where are you based?"

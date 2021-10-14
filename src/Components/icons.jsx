@@ -4,7 +4,7 @@ import React from "react";
 function Icons(props) {
     return (
         <div className="logo">
-            <img style={{ width: props.lsize }} src={props.src}alt="logo" />
+            <img style={{ width: props.lsize , borderRadius : props.circle?"50%":"0%"}} src={props.src} alt="logo" />
         </div>
     )
 }

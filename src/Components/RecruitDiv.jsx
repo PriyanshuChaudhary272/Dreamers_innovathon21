@@ -9,14 +9,14 @@ function RecruitDiv(props) {
                         <div>
                             <Icons lsize="2.5rem" src={props.iconsrc} />
                         </div>
-                        <div className="company-name">
+                        <div className="company-name media-company-name">
                             <h4>{props.name}</h4>
                             <p>{props.description}</p>
                         </div>
                     </div>
                     <div className="button-requirement">
                         <button style ={{backgroundColor: props.active==="true"?"#269014":"#c57b26"}} className="recruit-button">{props.active==="true"?"Active":"Close"}</button>
-                        <div className="company-name">
+                        <div className="company-name media-company-name">
                             <h5>{props.recruirement}</h5>
                             <p>{props.employee} Employee</p>
                         </div>

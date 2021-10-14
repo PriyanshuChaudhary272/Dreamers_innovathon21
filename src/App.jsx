@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 import Recruit from './Pages/Recruit';
 import UserList from './Pages/Userlist';
 import Credential from './Pages/Credentials';
+import More from './Pages/More';
 import {
     BrowserRouter as Router,
     Switch,
@@ -17,8 +18,10 @@ import {
 // import { useState } from 'react/cjs/react.development';
 
 function App() {
+    
     return (
         <Router>
+            {console.log(window.location.href)}
             <Navbar />
             <Switch>
                 <Route exact path="/">
