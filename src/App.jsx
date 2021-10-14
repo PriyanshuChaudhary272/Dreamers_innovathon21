@@ -30,7 +30,7 @@ function App() {
                 <Route exact path="/login">
                     <Login />
                 </Route>
-                <Route exact path="/register">
+                <Route exact path="/signup">
                     <Signup />
                 </Route>
                 <Route exact path="/uploadCV">
@@ -48,8 +48,8 @@ function App() {
                 <Route exact path="/credential">
                     <Credential />
                 </Route>
-                <Route path="/">
-                    <Home />
+                <Route path="/profile">
+                    <Profile />
                 </Route>
             </Switch>
             <Footer />

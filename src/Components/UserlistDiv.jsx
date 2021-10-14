@@ -1,5 +1,6 @@
 import React from "react";
 import Icons from "./icons";
+import { Link } from "react-router-dom";
 function UserlistDiv(props) {
     return (
         <div className="highlights-div">
@@ -7,10 +8,13 @@ function UserlistDiv(props) {
                 <div className="recruit-icon-name-button">
                     <div className="recruit-icon-name">
                         <div>
+                            <Link to={'/profile/'}>
                             <Icons lsize="2.5rem" src={props.iconsrc} />
+                            </Link>
                         </div>
                         <div className="company-name">
                             <h4>{props.name}</h4>
+                     
                             <p>{props.description}</p>
                         </div>
                     </div>

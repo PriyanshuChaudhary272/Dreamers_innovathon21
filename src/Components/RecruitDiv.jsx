@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Icons from "./icons";
 function RecruitDiv(props) {
     return (
@@ -7,7 +8,9 @@ function RecruitDiv(props) {
                 <div className="recruit-icon-name-button">
                     <div className="recruit-icon-name">
                         <div>
+                           
                             <Icons lsize="2.5rem" src={props.iconsrc} />
+                            
                         </div>
                         <div className="company-name media-company-name">
                             <h4>{props.name}</h4>

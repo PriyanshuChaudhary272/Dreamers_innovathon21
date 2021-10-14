@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import RecuitDiv from "../Components/RecruitDiv";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 function Recruit() {
@@ -34,7 +35,9 @@ function Recruit() {
             {posts.map(p=>(
             <RecuitDiv 
             key={p.id} post={p}
+           
             iconsrc = "https://cdn-icons.flaticon.com/png/512/3932/premium/3932506.png?token=exp=1633943083~hmac=aa399c25bf6959d8eb9524961e25719c"
+        
             name = {JSON.parse(JSON.stringify(p.name))}
             description = {JSON.parse(JSON.stringify(p.description))}
             active = {JSON.parse(JSON.stringify(p.active))}
