@@ -2,6 +2,7 @@ const express = require('express');
 const dotnev = require('dotenv');
 const helmet = require('helmet');
 const morgon = require('morgan');
+const cors = require ('cors');
 
 const db= require('./config/mongoose');
 
@@ -15,6 +16,7 @@ dotnev.config();
 
 //middleware
 app.use(express.json());
+app.use(cors());
 app.use(helmet());
 app.use(morgon("common"));
 
