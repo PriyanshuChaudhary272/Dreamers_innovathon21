@@ -6,7 +6,20 @@ const PostSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    desc: {
+    name:{
+      type: String,
+    },
+    recruirement:{
+      type: String,
+    },
+    employee:{
+      type: String,
+    },
+    active:{
+      type: String,
+    },
+
+    description: {
       type: String,
       max: 500,
     },
