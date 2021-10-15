@@ -48,7 +48,7 @@ function App() {
                 <Route exact path="/credential">
                     <Credential />
                 </Route>
-                <Route path="/profile">
+                <Route path="/users/profile/">
                     <Profile />
                 </Route>
             </Switch>

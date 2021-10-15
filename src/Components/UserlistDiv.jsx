@@ -1,5 +1,6 @@
 import React from "react";
 import Icons from "./icons";
+import Profile from '../Pages/Profile';
 import { Link } from "react-router-dom";
 function UserlistDiv(props) {
     return (
@@ -8,9 +9,14 @@ function UserlistDiv(props) {
                 <div className="recruit-icon-name-button">
                     <div className="recruit-icon-name">
                         <div>
-                            <Link to={'/profile/'}>
+                            <Link to={{
+                                pathname:`users/profile/${props.name}`,
+                                state:{profilelink:JSON.stringify(props.name)}
+                                }}>
                             <Icons lsize="2.5rem" src={props.iconsrc} />
+                            
                             </Link>
+                      
                         </div>
                         <div className="company-name">
                             <h4>{props.name}</h4>
@@ -28,7 +34,7 @@ function UserlistDiv(props) {
                 </div>
                 <div>
             
-                     <button style ={{backgroundColor: props.active==="true"?"#269014":"#c57b26"}} className="recruit-button">{props.active==="true"?"Open to Work":"Not Available   "}</button>
+                     <button style ={{backgroundColor: props.active==="true"?"#269014":"#c57b26"}} className="recruit-button">{props.active==="true"?"Open to Work":"Not Available"}</button>
                 </div>
             </div>
         </div>
