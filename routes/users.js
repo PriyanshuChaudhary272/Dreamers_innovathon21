@@ -4,7 +4,7 @@ const router= express.Router();
 const userController = require('../controllers/users_controller');
 
 
-router.get('/profile',userController.profile);
+router.get('/profile/:username',userController.profile);
 router.use('/auth',require('./auth'));
 router.use('/posts',require('./posts'));
 

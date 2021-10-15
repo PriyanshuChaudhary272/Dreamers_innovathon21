@@ -37,6 +37,9 @@ const userSchema = new mongoose.Schema({
     interests: {
         type: String,
     },
+    skills:{
+        type: String,
+    },
 
 
     followers: {

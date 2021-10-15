@@ -2,8 +2,13 @@ const User = require("../models/Users");
 const bcrypt = require("bcrypt");
 
 
-module.exports.profile = function (req, res) {
-    return res.send("<h1>User Profile</h1>");
+module.exports.profile = async function (req, res) {
+    try{
+        const user = await User.find({username:req.params.username});
+    res.status(200).json(user);
+    }catch(err){
+        res.status(500).json(err);
+    }
 };
 
 //update user
